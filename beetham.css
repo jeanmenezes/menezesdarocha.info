@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'beetham';
+    src: url('./beetham/beetham-oblique-webfont.woff2') format('woff2'),
+         url('./beetham/beetham-oblique-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'beetham';
+    src: url('./beetham/beetham-webfont.woff2') format('woff2'),
+         url('./beetham/beetham-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'beetham';
+    src: url('./beetham/beetham-bold-webfont.woff2') format('woff2'),
+         url('./beetham/beetham-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
