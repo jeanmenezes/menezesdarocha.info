@@ -48,6 +48,7 @@ p:before{
 .redline, .greenline, .blueline {
     font-weight: normal;
     opacity: 0.7;
+    text-decoration: none;
 }
 
 .redline {
@@ -68,6 +69,7 @@ p:before{
     padding: 0.25vmax;
     border-radius: 0.75vmax;
     opacity: 0.7;
+    text-decoration: none;
 }
 
 .red:hover, .green:hover, .blue:hover,
@@ -105,6 +107,7 @@ p:before{
     color: rgb(34,34,11);
     border-bottom: 2px dotted rgb(34,34,11);
     opacity: 0.7;
+    text-decoration: none;
 }
 
 a:link, a:active, a:visited {
