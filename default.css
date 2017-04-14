@@ -6,7 +6,7 @@ body {
     background-image: url("./lightpaperfibers.png"), url("./logo.svg");
     background-repeat: repeat, no-repeat;
     background-position: top left, top left;
-    background-size: auto, 20vmax;
+    background-size: auto, 20vw;
     background-color: rgba(126,172,211,0.4);
     background-blend-mode: multiply;
     color: rgb(34,34,11);
