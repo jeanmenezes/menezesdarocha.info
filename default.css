@@ -3,19 +3,18 @@ html {
 }
 
 body {
-    background-image: url("./lightpaperfibers.png"), url("./logo.svg");
-    background-repeat: repeat, no-repeat;
-    background-position: top left, top left;
-    background-size: auto, 20vw;
+    background-image: url("./logo.svg"), url("./debut_light.png");
+    background-repeat: no-repeat, repeat;
+    background-position: top left;
+    background-size: 20vw, auto;
     background-color: rgba(126,172,211,0.4);
     background-blend-mode: multiply;
     color: rgb(34,34,11);
-    /*overflow: hidden;*/
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    -webkit-animation: bmove 60s infinite alternate linear;
-    animation: bmove 30s infinite alternate linear;
+    -webkit-animation: bmove 20s infinite alternate linear;
+    animation: bmove 20s infinite alternate linear;
 }
 
 @-webkit-keyframes bmove {
@@ -38,6 +37,12 @@ p {
     line-height: 4.4vmax;
     min-height: 30vmax;
     margin-top: 20vh;
+    -ms-transform: rotateZ(3deg);
+    -webkit-transform: rotateZ(3deg);
+    transform: rotateZ(3deg);
+    -ms-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
 }
 
 p:before{
@@ -49,6 +54,8 @@ p:before{
     font-weight: normal;
     opacity: 0.7;
     text-decoration: none;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
 }
 
 .redline {
@@ -70,23 +77,14 @@ p:before{
     border-radius: 0.75vmax;
     opacity: 0.7;
     text-decoration: none;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
 }
 
 .red:hover, .green:hover, .blue:hover,
 .redline:hover, .greenline:hover, .blueline:hover,
 .mailme:hover {
-    -webkit-animation: mymove 1s ease-out forwards;
-    animation: mymove 1s ease-out forwards;
-}
-
-@-webkit-keyframes mymove {
-    from { opacity: 0.7; }
-    to { opacity: 1; }
-}
-
-@keyframes mymove {
-    from { opacity: 0.7; }
-    to { opacity: 1; }
+    opacity: 1;
 }
 
 .red {
@@ -105,9 +103,11 @@ p:before{
     font-weight: normal;
     padding-bottom: 2px;
     color: rgb(34,34,11);
-    border-bottom: 2px dotted rgb(34,34,11);
+    border-bottom: 0.2vmax dashed rgb(34,34,11);
     opacity: 0.7;
     text-decoration: none;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
 }
 
 a:link, a:active, a:visited {
